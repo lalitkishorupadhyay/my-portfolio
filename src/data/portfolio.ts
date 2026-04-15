@@ -1,29 +1,30 @@
 export const person = {
   name: 'Lalit Kishor Upadhyay',
   initials: 'LK',
-  role: 'Full Stack Developer',
+  role: 'Full-Stack Software Engineer',
   tagline:
-    'Building scalable web applications with React, Node.js & modern cloud infrastructure. ~5 years of turning ideas into production-grade software.',
+    'Building scalable, high-performance, and user-centric applications with React, Node.js & microservices. 5+ years turning ideas into production-grade software.',
   email: 'lalitkishorupadhyay@gmail.com',
   phone: '(+91) 8619721800',
-  github: '[YOUR_GITHUB_URL]',
-  linkedin: '[YOUR_LINKEDIN_URL]',
+  github: 'https://github.com/lalitkishorupadhyay',
+  linkedin: 'https://www.linkedin.com/in/lalit-upadhyay-84761222a/',
   cvUrl: '/Lalit_Upadhyay_Resume.pdf',
 }
 
 export const about = {
   bio: [
-    'Full Stack Developer with ~5 years of experience architecting and shipping MERN stack applications. I have led full rewrites from legacy PHP to modern Next.js/Node.js systems, built React component libraries, and deployed microservices on AWS.',
+    'Full-Stack Software Engineer with 5+ years of experience building scalable, high-performance, and user-centric applications. My core expertise is in JavaScript — React on the frontend and Node.js with Sequelize & MySQL on the backend.',
+    'I have hands-on experience with microservices, micro-frontend architectures, Docker, Kubernetes, and CI/CD pipelines, along with a solid grounding in networking fundamentals. Currently expanding into data engineering to deepen my understanding of large-scale data pipelines and system design.',
     'Outside of code — I competed at the national level in badminton, which gives me the same drive I bring to software: discipline, iteration, and never settling.',
   ],
   stats: [
     { value: '5+', label: 'Years Exp' },
-    { value: '3', label: 'Companies' },
-    { value: '5', label: 'Projects' },
+    { value: '3',  label: 'Companies' },
+    { value: '5',  label: 'Projects' },
     { value: '15+', label: 'Technologies' },
   ],
   current:
-    'Full Stack Dev @ Excel One Stop Solution — building fintech products with Next.js & microservices',
+    'Full-Stack Engineer @ Excel One Stop Solution — building fintech products with Next.js, Node.js & microservices',
 }
 
 export type SkillCategory = {
@@ -37,9 +38,11 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'React', highlight: true },
       { name: 'Next.js', highlight: true },
+      { name: 'JavaScript', highlight: true },
       { name: 'TypeScript' },
       { name: 'Redux' },
       { name: 'React Query' },
+      { name: 'Micro-Frontend' },
       { name: 'HTML / CSS' },
     ],
   },
@@ -48,8 +51,9 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Node.js', highlight: true },
       { name: 'Express.js', highlight: true },
-      { name: 'MongoDB' },
+      { name: 'Sequelize', highlight: true },
       { name: 'MySQL' },
+      { name: 'MongoDB' },
       { name: 'RESTful APIs' },
       { name: 'Microservices' },
     ],
@@ -59,11 +63,19 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Docker' },
       { name: 'Kubernetes' },
-      { name: 'Jenkins' },
+      { name: 'CI/CD Pipelines' },
       { name: 'AWS EC2' },
       { name: 'Nginx' },
+      { name: 'Networking' },
       { name: 'Storybook' },
-      { name: 'Rollup.js' },
+    ],
+  },
+  {
+    title: 'Learning',
+    skills: [
+      { name: 'Data Engineering' },
+      { name: 'Data Pipelines' },
+      { name: 'System Design' },
     ],
   },
 ]
@@ -146,6 +158,45 @@ export const projects: Project[] = [
       'Point of sale system — full stack development and cloud deployment on AWS.',
     tags: ['React', 'Node.js', 'AWS'],
     url: 'https://www.musepos.com',
+  },
+]
+
+export type Certification = {
+  name: string
+  issuer: string
+  date: string
+  expiryDate?: string
+  credentialId?: string
+  verifyUrl?: string
+  credlyUrl?: string
+  pdfUrl?: string
+  badgeColor: string
+  icon: string
+  badgeImage?: string
+}
+
+export const certifications: Certification[] = [
+  {
+    name: 'AWS Certified AI Practitioner',
+    issuer: 'Amazon Web Services (AWS)',
+    date: 'March 15, 2026',
+    expiryDate: 'March 15, 2029',
+    credentialId: '151ffdeef1af479eb32a467d0aab9e64',
+    credlyUrl: 'https://www.credly.com/badges/15114b69-725b-4704-9a77-e5488dab460f/public_url',
+    verifyUrl: 'https://aws.amazon.com/verification',
+    pdfUrl: '/AWS_Certified_AI_Practitioner.pdf',
+    badgeColor: '#ff9900',
+    icon: '☁️',
+    badgeImage: '/aws-badge.png',
+  },
+  {
+    name: 'Agentic AI',
+    issuer: 'DeepLearning.AI',
+    date: 'March 24, 2026',
+    credentialId: 'd022a06b-b6ae-45c4-9a93-ad8ddcbf3a96',
+    verifyUrl: 'https://learn.deeplearning.ai/certificates/d022a06b-b6ae-45c4-9a93-ad8ddcbf3a96',
+    badgeColor: '#e05c7e',
+    icon: '🤖',
   },
 ]
 

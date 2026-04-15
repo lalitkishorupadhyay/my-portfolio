@@ -38,9 +38,16 @@ function About() {
         variants={fadeIn('up', 'tween', 0.1, 1)}
         className="mt-4 text-white/60 text-[17px] max-w-3xl leading-[30px]"
       >
-        Full Stack Developer with ~5 years of experience architecting and shipping MERN stack
-        applications. I've led full rewrites from legacy PHP to modern Next.js/Node.js systems,
-        built React component libraries published to npm, and deployed microservices on AWS.
+        Full-Stack Software Engineer with 5+ years of experience building scalable,
+        high-performance, and user-centric applications. My core expertise is in{' '}
+        <span className="text-white/80 font-medium">JavaScript</span> — React on the frontend and
+        Node.js with Sequelize &amp; MySQL on the backend.
+        <br /><br />
+        I have hands-on experience with{' '}
+        <span className="text-white/80 font-medium">microservices, micro-frontend architectures,
+        Docker, Kubernetes, and CI/CD pipelines</span>, along with a solid grounding in networking
+        fundamentals. Currently expanding into data engineering to deepen my understanding of
+        large-scale data pipelines and system design.
         <br /><br />
         Outside of code — I competed at the national level in badminton, which gives me the same
         drive I bring to software: discipline, iteration, and never settling.

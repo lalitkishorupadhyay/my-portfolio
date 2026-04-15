@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { navLinks } from '../constants'
+import avatar from '../assets/avatar.jpg'
 
 export default function Navbar() {
   const [active, setActive] = useState('')
@@ -22,18 +23,17 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#"
-          className="flex items-center gap-2"
+          className="flex items-center gap-3"
           onClick={() => { setActive(''); window.scrollTo(0, 0) }}
         >
           <div
-            className="w-9 h-9 rounded-full flex items-center justify-center font-black text-sm border"
+            className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0"
             style={{
-              background: 'rgba(251,146,60,0.15)',
-              borderColor: 'rgba(251,146,60,0.4)',
-              color: '#fb923c',
+              border: '2px solid rgba(251,146,60,0.6)',
+              boxShadow: '0 0 10px rgba(251,146,60,0.3)',
             }}
           >
-            LK
+            <img src={avatar} alt="Lalit Kishor" className="w-full h-full object-cover" />
           </div>
           <p className="text-white font-bold text-[18px] hidden sm:flex">
             Lalit &nbsp;<span className="text-ember">Kishor</span>

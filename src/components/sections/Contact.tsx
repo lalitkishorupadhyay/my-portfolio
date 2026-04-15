@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'
 import { slideIn } from '../../utils/motion'
 import SectionWrapper from '../../hoc/SectionWrapper'
 import StarsCanvas from '../canvas/Stars'
+import avatar from '../../assets/avatar.jpg'
 
 function Contact() {
   const formRef = useRef<HTMLFormElement>(null)
@@ -111,8 +112,10 @@ function Contact() {
         {/* Contact links */}
         <div className="mt-8 flex flex-col gap-3">
           {[
-            { icon: '✉', label: 'lalitkishorupadhyay@gmail.com', href: 'mailto:lalitkishorupadhyay@gmail.com' },
-            { icon: '📱', label: '(+91) 8619721800',              href: 'tel:+918619721800' },
+            { icon: '✉', label: 'lalitkishorupadhyay@gmail.com',           href: 'mailto:lalitkishorupadhyay@gmail.com' },
+            { icon: '📱', label: '(+91) 8619721800',                        href: 'tel:+918619721800' },
+            { icon: '🐙', label: 'github.com/lalitkishorupadhyay',          href: 'https://github.com/lalitkishorupadhyay' },
+            { icon: '💼', label: 'linkedin.com/in/lalit-upadhyay-84761222a', href: 'https://www.linkedin.com/in/lalit-upadhyay-84761222a/' },
           ].map(link => (
             <a
               key={link.label}
@@ -135,17 +138,17 @@ function Contact() {
         <StarsCanvas />
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 pointer-events-none">
           <div
-            className="w-24 h-24 rounded-full flex items-center justify-center text-3xl font-black border-2"
+            className="w-32 h-32 rounded-full overflow-hidden"
             style={{
-              background: 'rgba(251,146,60,0.1)',
-              borderColor: 'rgba(251,146,60,0.4)',
-              color: '#fb923c',
+              border: '3px solid rgba(251,146,60,0.6)',
+              boxShadow: '0 0 30px rgba(251,146,60,0.35)',
             }}
           >
-            LK
+            <img src={avatar} alt="Lalit Kishor Upadhyay" className="w-full h-full object-cover" />
           </div>
-          <p className="text-white/60 text-sm tracking-widest uppercase">Full Stack Developer</p>
-          <p className="text-white/40 text-xs">Open to opportunities</p>
+          <p className="text-white/70 text-sm font-semibold tracking-wide">Lalit Kishor Upadhyay</p>
+          <p className="text-white/50 text-xs tracking-widest uppercase">Full-Stack Software Engineer</p>
+          <p className="text-white/30 text-xs">Open to opportunities</p>
         </div>
       </motion.div>
     </div>

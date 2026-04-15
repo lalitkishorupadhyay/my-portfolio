@@ -8,26 +8,28 @@ export const navLinks = [
 export type Service = { title: string; icon: string }
 export const services: Service[] = [
   { title: 'React / Next.js Developer', icon: '⚛️' },
-  { title: 'Node.js / Express Developer', icon: '🟢' },
-  { title: 'Full Stack Engineer', icon: '🚀' },
-  { title: 'DevOps & Cloud (AWS)', icon: '☁️' },
+  { title: 'Node.js + Sequelize + MySQL', icon: '🟢' },
+  { title: 'Microservices & Micro-Frontend', icon: '🧩' },
+  { title: 'DevOps — Docker, K8s, CI/CD', icon: '☁️' },
 ]
 
-export type Technology = { name: string; color: string }
+export type Technology = { name: string; color: string; icon: string }
 export const technologies: Technology[] = [
-  { name: 'React',        color: '#61dafb' },
-  { name: 'Next.js',      color: '#ffffff' },
-  { name: 'TypeScript',   color: '#3178c6' },
-  { name: 'JavaScript',   color: '#f7df1e' },
-  { name: 'Redux',        color: '#764abc' },
-  { name: 'React Query',  color: '#ff4154' },
-  { name: 'Node.js',      color: '#8cc84b' },
-  { name: 'Express.js',   color: '#aaaaaa' },
-  { name: 'MongoDB',      color: '#47a248' },
-  { name: 'MySQL',        color: '#4479a1' },
-  { name: 'Docker',       color: '#0db7ed' },
-  { name: 'AWS EC2',      color: '#ff9900' },
-  { name: 'Kubernetes',   color: '#326ce5' },
+  { name: 'React',        color: '#61dafb', icon: 'SiReact' },
+  { name: 'Next.js',      color: '#ffffff', icon: 'SiNextdotjs' },
+  { name: 'TypeScript',   color: '#3178c6', icon: 'SiTypescript' },
+  { name: 'JavaScript',   color: '#f7df1e', icon: 'SiJavascript' },
+  { name: 'Redux',        color: '#764abc', icon: 'SiRedux' },
+  { name: 'React Query',  color: '#ff4154', icon: 'SiReactquery' },
+  { name: 'Node.js',      color: '#8cc84b', icon: 'SiNodedotjs' },
+  { name: 'Express.js',   color: '#aaaaaa', icon: 'SiExpress' },
+  { name: 'MongoDB',      color: '#47a248', icon: 'SiMongodb' },
+  { name: 'MySQL',        color: '#4479a1', icon: 'SiMysql' },
+  { name: 'Sequelize',    color: '#52b0e7', icon: 'SiSequelize' },
+  { name: 'Docker',       color: '#0db7ed', icon: 'SiDocker' },
+  { name: 'Kubernetes',   color: '#326ce5', icon: 'SiKubernetes' },
+  { name: 'AWS',          color: '#ff9900', icon: 'SiAmazonwebservices' },
+  { name: 'Jenkins',      color: '#d33834', icon: 'SiJenkins' },
 ]
 
 export type Experience = {
