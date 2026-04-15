@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ember: #fb923c;
+  --color-bg-start: #1a1a2e;
+  --color-bg-mid: #0f3460;
+  --color-bg-end: #533483;
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  color: white;
+}
+
+/* Scroll-snap container — applied to #snap-root in App.tsx */
+#snap-root {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Every direct section child snaps */
+#snap-root > section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reusable glass card */
+@layer components {
+  .glass-card {
+    @apply bg-white/5 border border-white/10 backdrop-blur-[10px] rounded-2xl;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .section-label {
+    @apply text-[10px] tracking-[4px] uppercase text-ember mb-3;
+  }
+
+  .skill-tag {
+    @apply inline-block px-3 py-1 m-1 text-xs rounded-full bg-white/5 border border-white/10 text-white/80;
+  }
+
+  .skill-tag-highlight {
+    @apply inline-block px-3 py-1 m-1 text-xs rounded-full border text-ember;
+    background: rgba(251, 146, 60, 0.12);
+    border-color: rgba(251, 146, 60, 0.3);
+  }
+}
