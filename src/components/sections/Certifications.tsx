@@ -134,7 +134,7 @@ function Certifications() {
       </motion.div>
 
       <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
+        variants={fadeIn('up', 'tween', 0.1, 1)}
         className="mt-3 text-white/50 text-[15px] max-w-2xl leading-relaxed"
       >
         Industry-recognized certifications validating cloud and AI expertise.

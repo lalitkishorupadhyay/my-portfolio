@@ -8,7 +8,7 @@ import SectionWrapper from '../../hoc/SectionWrapper'
 type SiKey = keyof typeof Si
 
 function TechCard({ tech, index }: { tech: typeof technologies[0]; index: number }) {
-  const IconComponent = Si[tech.icon as SiKey] as React.ElementType | undefined
+  const IconComponent = Si[tech.icon as SiKey] as ((props: { size: number; color: string }) => React.ReactElement) | undefined
 
   return (
     <motion.div
