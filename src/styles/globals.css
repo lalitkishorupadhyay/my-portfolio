@@ -21,6 +21,10 @@ html {
   color: white;
 }
 
+body {
+  overflow: hidden;
+}
+
 /* Scroll-snap container — applied to #snap-root in App.tsx */
 #snap-root {
   height: 100vh;
@@ -40,7 +44,7 @@ html {
 /* Reusable glass card */
 @layer components {
   .glass-card {
-    @apply bg-white/5 border border-white/10 backdrop-blur-[10px] rounded-2xl;
+    @apply bg-white/5 border border-white/10 backdrop-blur-glass rounded-2xl;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 
@@ -54,7 +58,7 @@ html {
 
   .skill-tag-highlight {
     @apply inline-block px-3 py-1 m-1 text-xs rounded-full border text-ember;
-    background: rgba(251, 146, 60, 0.12);
-    border-color: rgba(251, 146, 60, 0.3);
+    background: theme('colors.ember-dim');
+    border-color: theme('colors.ember-border');
   }
 }
