@@ -115,7 +115,7 @@ function Contact() {
             { icon: '✉', label: 'lalitkishorupadhyay@gmail.com',           href: 'mailto:lalitkishorupadhyay@gmail.com' },
             { icon: '📱', label: '(+91) 8619721800',                        href: 'tel:+918619721800' },
             { icon: '🐙', label: 'github.com/lalitkishorupadhyay',          href: 'https://github.com/lalitkishorupadhyay' },
-            { icon: '💼', label: 'linkedin.com/in/lalit-upadhyay-84761222a', href: 'https://www.linkedin.com/in/lalit-upadhyay-84761222a/' },
+            { icon: '💼', label: 'linkedin.com/in/lalit-kishor-upadhyay', href: 'https://www.linkedin.com/in/lalit-kishor-upadhyay/' },
           ].map(link => (
             <a
               key={link.label}

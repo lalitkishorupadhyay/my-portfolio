@@ -65,7 +65,7 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/lalit-upadhyay-84761222a/"
+              href="https://www.linkedin.com/in/lalit-kishor-upadhyay/"
               target="_blank"
               rel="noreferrer"
               className="px-6 py-3 rounded-xl font-semibold text-sm tracking-wide border border-white/20 text-white/80 hover:border-ember hover:text-ember transition-all"

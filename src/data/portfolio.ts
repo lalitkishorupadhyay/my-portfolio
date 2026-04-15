@@ -7,7 +7,7 @@ export const person = {
   email: 'lalitkishorupadhyay@gmail.com',
   phone: '(+91) 8619721800',
   github: 'https://github.com/lalitkishorupadhyay',
-  linkedin: 'https://www.linkedin.com/in/lalit-upadhyay-84761222a/',
+  linkedin: 'https://www.linkedin.com/in/lalit-kishor-upadhyay/',
   cvUrl: '/Lalit_Upadhyay_Resume.pdf',
 }
 
