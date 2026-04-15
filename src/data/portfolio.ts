@@ -198,6 +198,14 @@ export const certifications: Certification[] = [
     badgeColor: '#e05c7e',
     icon: '🤖',
   },
+  {
+    name: 'LangChain for LLM Application Development',
+    issuer: 'DeepLearning.AI',
+    date: 'March 24, 2026',
+    verifyUrl: 'https://learn.deeplearning.ai/accomplishments/51a33042-f50d-465a-94f0-e7ee77b9768f',
+    badgeColor: '#e05c7e',
+    icon: '🦜',
+  },
 ]
 
 export const sections = ['Hero', 'About', 'Skills', 'Experience', 'Projects', 'Contact']
