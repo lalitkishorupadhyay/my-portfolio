@@ -3,6 +3,11 @@ import Tilt from 'react-parallax-tilt'
 import { certifications } from '../../data/portfolio'
 import { fadeIn, textVariant } from '../../utils/motion'
 import SectionWrapper from '../../hoc/SectionWrapper'
+import awsBadge from '../../assets/aws-badge.png'
+
+const badgeImageMap: Record<string, string> = {
+  '/aws-badge.png': awsBadge,
+}
 
 function CertCard({ cert, index }: { cert: typeof certifications[0]; index: number }) {
   return (
@@ -22,7 +27,7 @@ function CertCard({ cert, index }: { cert: typeof certifications[0]; index: numb
             <div className="flex items-start justify-between gap-4">
               {cert.badgeImage ? (
                 <img
-                  src={cert.badgeImage}
+                  src={badgeImageMap[cert.badgeImage] ?? cert.badgeImage}
                   alt={cert.name}
                   className="w-16 h-16 object-contain rounded-xl flex-shrink-0"
                   style={{
