@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="relative z-0 bg-primary">
       {/* Hero with navbar */}
-      <div style={{ backgroundImage: 'url("/herobg.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+      <div style={{ backgroundImage: 'url("/herobg.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition:'center' }}>
         <Navbar />
         <Hero />
       </div>
